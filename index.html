@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artur jacinto | Software Engineering</title>
-    <script type="module" crossorigin src="/assets/index-CHoYbwu2.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BbncMmG5.css">
+    <script>
+      (function () {
+        var redirect = new URLSearchParams(window.location.search).get('route')
+        if (redirect) {
+          window.history.replaceState(null, '', redirect + window.location.hash)
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-DCyqQ23t.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Av1vyYur.css">
   </head>
   <body>
     <div id="app"></div>
